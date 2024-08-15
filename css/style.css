@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("../bg.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreBox{
+    position:absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+}
+#highscoreBox{
+    position:absolute;
+    top: 59px;
+    right: 140px;
+    font-size: 39px;
+    font-weight: bold;
+}
+
+
+#board{
+    background: linear-gradient(rgb(145, 188, 145),rgb(239, 239, 141));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+     
+}
+
+.head{
+    background: linear-gradient(45deg,purple, black);
+    border: .25vmin solid black;
+    border-radius: 6px;
+}
+.snake{
+    background: linear-gradient(45deg,purple, grey);
+    border: .25vmin solid white;
+    border-radius: 6px;
+}
+.food{
+    background: linear-gradient(45deg,red, yellow);
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
+/* Bomb styling */
+.bomb {
+    background: linear-gradient(black, grey); /* Bomb color gradient */
+    border: .25vmin solid black; /* Border around the bomb */
+    border-radius: 50%; /* Make the bomb circular */
+     /* Full height of the grid cell */
+}
